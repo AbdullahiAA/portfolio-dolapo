@@ -27,7 +27,7 @@ header {
 
 @media screen and (max-width: 767px) {
    nav {
-      z-index: 1000;
+      z-index: 1000 !important;
       border: 1px solid var(--bg-color);
       position: fixed;
       top: 0;
@@ -42,6 +42,21 @@ header {
 
    nav.active {
       transform: translateX(0%);
+   }
+
+   .overlay {
+      background-color: rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 60%;
+      height: 100vh;
+      z-index: -3 !important;
+      transition: all 0.3s ease-in-out;
+   }
+
+   .overlay.active {
+      transform: translateX(-100%);
    }
 
    nav ul {
@@ -72,7 +87,8 @@ header {
    }
 
    .menu-icon,
-   .close-icon {
+   .close-icon,
+   .overlay {
       display: none;
    }
 

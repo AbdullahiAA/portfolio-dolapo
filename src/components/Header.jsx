@@ -6,13 +6,16 @@ import { useRef } from "react";
 
 function Header() {
    const menuRef = useRef(null);
+   const overlayRef = useRef(null);
 
    function showMenu() {
       menuRef.current.classList.add("active");
+      overlayRef.current.classList.add("active");
    }
 
    function closeMenu() {
       menuRef.current.classList.remove("active");
+      overlayRef.current.classList.remove("active");
    }
 
    return (
@@ -28,6 +31,12 @@ function Header() {
             </div>
 
             <nav ref={menuRef}>
+               <div
+                  className="overlay"
+                  ref={overlayRef}
+                  onClick={closeMenu}
+               ></div>
+
                <div className="close-icon" onClick={closeMenu}>
                   <CloseIcon />
                </div>
