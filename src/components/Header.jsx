@@ -1,6 +1,20 @@
 import "./Header.css";
 
+import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from "@material-ui/icons/Close";
+import { useRef } from "react";
+
 function Header() {
+   const menuRef = useRef(null);
+
+   function showMenu() {
+      menuRef.current.classList.add("active");
+   }
+
+   function closeMenu() {
+      menuRef.current.classList.remove("active");
+   }
+
    return (
       <header>
          <div className="header__left">
@@ -9,9 +23,15 @@ function Header() {
          </div>
 
          <div className="header__right">
-            <p className="menu-icon">Menu</p>
+            <div className="menu-icon" onClick={showMenu}>
+               <MenuIcon />
+            </div>
 
-            <nav>
+            <nav ref={menuRef}>
+               <div className="close-icon" onClick={closeMenu}>
+                  <CloseIcon />
+               </div>
+
                <ul>
                   <li>Work</li>
                   <li>Ongoing Projects</li>

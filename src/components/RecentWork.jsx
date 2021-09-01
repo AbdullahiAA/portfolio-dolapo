@@ -19,7 +19,7 @@ function RecentWork() {
          <div className="RecentWork__itemsContainer">
             <div className="RecentWork__item">
                <div className="RecentWork__itemTop">
-                  <img src={worldCitizenImg} alt="RecentWork Image" />
+                  <img src={worldCitizenImg} alt="RecentWork" />
                </div>
                <div className="RecentWork__itemBottom">
                   <p className="RecentWork__highlights">
@@ -31,7 +31,7 @@ function RecentWork() {
                   </h4>
 
                   <div className="RecentWork__link">
-                     <a href="#">
+                     <a href="/">
                         View Case Study{" "}
                         <img src={ArrowRight} alt="Icon" aria-hidden="true" />
                      </a>
@@ -41,7 +41,7 @@ function RecentWork() {
 
             <div className="RecentWork__item">
                <div className="RecentWork__itemTop">
-                  <img src={HNGRedesignImg} alt="RecentWork Image" />
+                  <img src={HNGRedesignImg} alt="RecentWork" />
                </div>
                <div className="RecentWork__itemBottom">
                   <p className="RecentWork__highlights">UI/UX Design</p>
@@ -49,7 +49,7 @@ function RecentWork() {
                   <h4 className="RecentWork__descr">A Website Re-design</h4>
 
                   <div className="RecentWork__link">
-                     <a href="#">
+                     <a href="/">
                         View Redesign{" "}
                         <img src={ArrowRight} alt="Icon" aria-hidden="true" />
                      </a>

@@ -1,5 +1,10 @@
 import "./Hero.css";
 
+import TwitterIcon from "@material-ui/icons/Twitter";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+
 function Hero() {
    return (
       <section className="hero">
@@ -24,9 +29,38 @@ function Hero() {
                <h2>Let’s connect:</h2>
 
                <div className="hero__socialIcons">
-                  <a href="#">Icon</a>
-                  <a href="#">Icon</a>
-                  <a href="#">Icon</a>
+                  <a
+                     href="https://www.linkedin.com/in/god-spromise-joseph-719207128"
+                     target="_blank"
+                     rel="noreferrer"
+                     aria-label="LinkedIn"
+                  >
+                     <LinkedInIcon />
+                  </a>
+                  <a
+                     href="https://www.facebook.com/profile.php?id=100071972744926"
+                     target="_blank"
+                     rel="noreferrer"
+                     aria-label="Facebook"
+                  >
+                     <FacebookIcon />
+                  </a>
+                  <a
+                     href="https://www.instagram.com/invites/contact/?i=b7818iz6gv0n&utm_content=mkdt808"
+                     target="_blank"
+                     rel="noreferrer"
+                     aria-label="Instagram"
+                  >
+                     <InstagramIcon />
+                  </a>
+                  <a
+                     href="https://twitter.com/joseph_dolapo?s=08"
+                     target="_blank"
+                     rel="noreferrer"
+                     aria-label="Twitter"
+                  >
+                     <TwitterIcon />
+                  </a>
                </div>
             </div>
          </div>
