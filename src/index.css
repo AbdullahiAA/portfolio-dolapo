@@ -17,7 +17,6 @@
 }
 
 body {
-   /* padding-bottom: 1000px; */
    background-color: var(--bg-color);
    color: var(--text-color);
    margin: 0;
@@ -37,10 +36,6 @@ h1 {
 
 h2 {
    font-size: 20px;
-}
-
-h3 {
-   /* font-size: px; */
 }
 
 h5 {

@@ -8,26 +8,13 @@ import SkillSet from "../components/SkillSet";
 
 function Home() {
    return (
-      <div>
-         {/* Header */}
+      <div className="home">
          <Header />
-
-         {/* Hero Section */}
          <Hero />
-
-         {/* About Section */}
          <About />
-
-         {/* Skill Set Section */}
          <SkillSet />
-
-         {/* Recent Work Section */}
          <RecentWork />
-
-         {/* Experiences Section */}
          <Experiences />
-
-         {/* Footer */}
          <Footer />
       </div>
    );
